@@ -9,7 +9,7 @@ namespace exercise_07
             Console.WriteLine("Give input!");
             // Write your code here:
             
-            string Hello = Console.ReadLine();
+            string xyz = Console.ReadLine();
             Console.WriteLine("Hello" + "\n" + "Hello" + "\n" + "Hello");
             //
             //Console.WriteLine(message);
