@@ -14,11 +14,11 @@ namespace exercise_28
          
       if(value >= 18)
       {
-        Console.WriteLine ("You are an adult!");
+        Console.WriteLine ("You're an adult!");
       }
       else
       {
-        Console.WriteLine ("You are under age!");
+        Console.WriteLine ("You're under age!");
       }
 
     }
