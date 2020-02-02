@@ -8,6 +8,12 @@ namespace exercise_41
     {
 
       // Write your code here:
+
+      int user_input = Convert.ToInt32(Console.ReadLine());
+
+      Console.WriteLine (user_input * user_input);  
+
+
       
     }
   }
