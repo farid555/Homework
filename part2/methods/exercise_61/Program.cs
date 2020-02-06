@@ -6,6 +6,7 @@ namespace exercise_61
   {
     public static void Main(String[] args)
     {
+      //PrintRightTriangle (4);
       ChristmasTree(10);
     }
 
@@ -22,7 +23,7 @@ namespace exercise_61
     {
        for (int i = 0; i < number; i++)
        {
-         Console.WriteLine("");
+         Console.Write(" ");
        }
     }
 
@@ -55,7 +56,7 @@ namespace exercise_61
         for (int x = 0; x < 2; x++)
         {
           PrintSpaces(foot);
-          PrintStars(3);
+          PrintStars(4);
         }
     }
   }
