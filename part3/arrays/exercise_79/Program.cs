@@ -22,7 +22,20 @@ namespace exercise_79
       int searching = Convert.ToInt32(Console.ReadLine());
 
       // Implement the search functionality here
-
+      //truth value, if the array contains the searched number
+      bool found = false;
+      //go through our array
+       for (int i = 0; i< array.Length; i++);
+       {  // if array is index i is what we are searching
+         if(array[i] == searching)
+         {
+           Console.WriteLine(searching + "is at index" + i + ".");
+           found = true;
+         }
+       }
+    }   if (!found) 
+    {
+      Console.WriteLine (searching + " was not found.");
     }
 
   }
