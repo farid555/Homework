@@ -20,10 +20,11 @@ namespace exercise_64
 
       foreach (string line in lines)
       {
-        Console.WriteLine(line);
+        //Console.WriteLine(line);
+        Console.WriteLine (lines[6]);
       }
         //Console.WriteLine ("There are" + (lines.Count-1) + "indexes in list");
-    }   Console.WriteLine (lines[7]);
+    }   
 
   }
 }
