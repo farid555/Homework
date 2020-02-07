@@ -9,6 +9,8 @@ namespace exercise_62
     public static void Main(string[] args)
     {
       List<string> list = new List<string>();
+       
+       
       while (true)
       {
         string input = Console.ReadLine();
