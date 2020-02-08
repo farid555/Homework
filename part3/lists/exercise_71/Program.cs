@@ -17,7 +17,15 @@ namespace exercise_71
         }
         list.Add(input);
       }
-
+        Console.WriteLine ("Search for?");
+        int user_input = Convert.ToInt32(Console.ReadLine());
+        for (int i = 0; i < list.Count; i++)
+        {
+          if (list[i] == user_input )
+          {
+            Console.WriteLine (user_input + " is at index " + i);
+          }
+        }
     }
   }
 }
