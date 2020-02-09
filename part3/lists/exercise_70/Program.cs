@@ -22,6 +22,7 @@ namespace exercise_70
         for(int i = 0; i < list.Count; i++)
         {
           int num = list[i];
+          
           if(greatest < num)
           {
             greatest = num;
