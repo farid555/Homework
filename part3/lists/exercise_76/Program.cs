@@ -4,25 +4,25 @@ using System.Collections.Generic;
 namespace exercise_76 {
   class Program {
     public static void Main (string[] args) {
-      List<int> numbers = new List<int> ();
-      numbers.Add (2);
-      numbers.Add (6);
-      numbers.Add (-1);
+      List<int> num_bers = new List<int> ();
+      num_bers.Add (2);
+      num_bers.Add (6);
+      num_bers.Add (-1);
 
-      Console.WriteLine (Sum (numbers));
+      Console.WriteLine (Sum (num_bers));
 
-      numbers.Add (5);
-      numbers.Add (1);
+      num_bers.Add (5);
+      num_bers.Add (1);
 
-      Console.WriteLine (Sum (numbers));
+      Console.WriteLine (Sum (num_bers));
     } // method
 
-    public static int Sum (List<int> numbers) {
+    public static int Sum (List<int> num_bers) {
       // start from zero
       int sum = 0;
 
-      for (int i = 0; i < numbers.Count; i++) {
-        int number = numbers[i];
+      for (int i = 0; i < num_bers.Count; i++) {
+        int number = num_bers[i];
         sum = sum + number;
 
       } //it shows the totals
