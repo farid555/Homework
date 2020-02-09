@@ -1,35 +1,24 @@
 ﻿using System;
 using System.Collections.Generic;
 
-namespace exercise_73
-{
-  class Program
-  {
-    public static void Main(string[] args)
-    {
-      List<int> list = new List<int>();
+namespace exercise_73 {
+  class Program {
+    public static void Main (string[] args) {
+      List<int> list = new List<int> ();
       int sum = 0;
-      while (true)
-      {
-        int input = Convert.ToInt32(Console.ReadLine());
-        if (input == -1)
-        {
+      while (true) {
+        int input = Convert.ToInt32 (Console.ReadLine ());
+        if (input == -1) {
           break;
         }
-        list.Add(input);
+        list.Add (input);
       }
-      Console.WriteLine("Exit loop");
-      for (int i= 0; i<list.Count; i++)
-      {
-        sum += list[i];
+
+      for (int i = 0; i < list.Count; i++) {
+        int number = list[i];
+        sum = sum + number;
       }
-         foreach (int number in list)
-         {
-           sum += number;
-         }
-         
-             
-         }
+      Console.WriteLine ("Sum: " + sum);
     }
   }
-
+}
