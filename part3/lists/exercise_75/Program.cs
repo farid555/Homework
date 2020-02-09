@@ -29,7 +29,7 @@ namespace exercise_75
       {
         for (int i = 0; i < numbers.Count; i++)
         {  
-          int number =numbers[i];
+          int number = numbers[i];
           // check the numbers...
           if ((number >= LowerLimit) &&( number <= upperLimit))
           { //if both above are true, print the number
