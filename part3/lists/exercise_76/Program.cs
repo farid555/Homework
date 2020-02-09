@@ -8,10 +8,12 @@ namespace exercise_76 {
       numbers.Add (2);
       numbers.Add (6);
       numbers.Add (-1);
+
       Console.WriteLine (Sum (numbers));
 
       numbers.Add (5);
       numbers.Add (1);
+
       Console.WriteLine (Sum (numbers));
     } // method
 
@@ -23,8 +25,8 @@ namespace exercise_76 {
         int number = numbers[i];
         sum = sum + number;
 
-      }     //it shows the totals
-           return (sum);
+      } //it shows the totals
+      return (sum);
     }
   }
 }
