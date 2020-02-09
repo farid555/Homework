@@ -24,10 +24,13 @@ namespace exercise_75
       Console.WriteLine("The numbers in the range [3, 10]");
       PrintNumbersInRange(numbers, 3, 10);
     }
+        //method
       public static void PrintNumbersInRange (List<int> numbers, int LowerLimit, int upperLimit)
       {
-        foreach (int number in numbers)
+        for (int i = 0; i < numbers.Count; i++)
         {  
+          int number =numbers[i];
+          // check the numbers...
           if ((number >= LowerLimit) &&( number <= upperLimit))
           { //if both above are true, print the number
             Console.WriteLine(number);
