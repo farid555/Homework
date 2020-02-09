@@ -16,7 +16,7 @@ namespace exercise_76 {
     } // method
 
     public static int Sum (List<int> numbers) {
-      // start from 0
+      // start from zero
       int sum = 0;
 
       for (int i = 0; i < numbers.Count; i++) {
