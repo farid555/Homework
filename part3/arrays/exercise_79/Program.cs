@@ -5,7 +5,7 @@ namespace exercise_79 {
   class Program {
     public static void Main (string[] args) {
       // DO NOT CHANGE THE FOLLOWING CODE!
-      int[] array = new int[10];
+     /* int[] array = new int[10];
       array[0] = 6;
       array[1] = 2;
       array[2] = 8;
@@ -13,28 +13,32 @@ namespace exercise_79 {
       array[4] = 3;
       array[5] = 0;
       array[6] = 9;
-      array[7] = 7;
+      array[7] = 7; */
+
+      int [] array = new int [8] {6,2,8,1,3,0,9,7};
 
       Console.WriteLine ("Search for?");
-      int searching = Convert.ToInt32 (Console.ReadLine());
-      // Implement the search functionality here
-
-      int found = -1;
-      for(int i = 0; i <array.Length; i++){
-        if(searching == array[i]){
-          found = i;
+      int searching = Convert.ToInt32 (Console.ReadLine ());
+      bool found = false;
+      for (int i = 0; i < array.Length; i++) {
+        if (array[i] == searching) {
+          Console.WriteLine (searching + " is at index " + i + ".");
+          found = true;
+          break;
         }
       }
-        if (found >= 0){
-          Console.WriteLine(searching +" is at index " + found + ".");
+        if (!found) {
+          Console.WriteLine (searching + " was not found." );
+
         }
-        else
-        {
-            Console.WriteLine (searching + " was not found.");
-        }
+        //if (found == false)
+        
+          //break;
+
+        
       
-      
-     
+      // Implement the search functionality here
+
     }
 
   }
