@@ -1,54 +1,52 @@
 ﻿using System;
 using System.Collections.Generic;
 
-namespace exercise_113
-{
-    class Program
-    {
-        public static void Main(string[] args)
-        {
+namespace exercise_113 {
+    class Program {
+        public static void Main (string[] args) {
             // IMPLEMENT YOUR CODE IN HERE!
             // Remember also to create the file Book.cs and class in it!
-            List<Book> list = new List<Book>();
+            List<Book> books = new List<Book> ();
 
-            while (true)
-            {
-                Console.Write("Name: ");
-                string name = Console.ReadLine();
-                if (name == "")
-                {
+            while (true) {
+                //name or title
+                Console.Write ("Name: ");
+                string title = Console.ReadLine ();
+                if (title == "") {
                     break;
                 }
-                Console.Write("Pages: ");
-                int pages = Convert.ToInt32(Console.ReadLine());
+                //ask for amount of pages
+                Console.Write ("Pages: ");
+                int pages = Convert.ToInt32 (Console.ReadLine ());
 
-                Console.Write("Publication year: ");
-                int year = Convert.ToInt32(Console.ReadLine());
-                list.Add(new Book(name, pages, year));
+                //ask for pub year
+                Console.Write ("Publication year: ");
+                int year = Convert.ToInt32 (Console.ReadLine ());
+
+                //add bbok information to list
+                books.Add (new Book (title, pages, year));
             }
-            Console.WriteLine();
-            Console.Write("What information will be printed? ");
-            string printed = Console.ReadLine();
+            //blank line
+            Console.WriteLine ();
 
-            foreach (Book item in list)
-            {
-                if (printed == "everything")
-                {
-                    Console.WriteLine(item);
-                }
-                else if (printed == "title")
-                {
-                    Console.WriteLine(item.name);
-                }
-                else
-                {
+            //what we want to see
+            Console.Write ("What information will be printed? ");
+            string inputfromuser = Console.ReadLine ();
+
+            //list the books, redid this part of exe
+            //first attem to much code
+
+            foreach (Book item in books) {
+                if (inputfromuser == "title") {
+                    //print only title
+                    Console.WriteLine (item.title);
+                } else if (inputfromuser == "everything") {
+                    //print everything
+                    Console.WriteLine (item);
+                } else {
                     break;
                 }
             }
         }
     }
 }
-
-
-
-
