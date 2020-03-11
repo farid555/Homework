@@ -9,12 +9,12 @@ namespace exercise_21
               
       // Write your code here:
      Console.WriteLine ("Give the first number!");
-     string input_one = Console.ReadLine();
+     string input = Console.ReadLine();
 
      Console.WriteLine  ("Give the second number!");
      string input_two = Console.ReadLine();
 
-     int value_one = Convert.ToInt32(input_one);
+     int value_one = Convert.ToInt32(input);
      int value_two = Convert.ToInt32(input_two);
 
      double average = (value_one + value_two) / 2.0;
