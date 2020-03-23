@@ -20,10 +20,26 @@ namespace exercise_131
     {
 
       //compare with Item.identifier
+      if(this == compared)
+      {
+        return true;
+      }
 
+      // if the compared object is null or not of type item, the object are not equel
+      if((compared == null) || !this.GetType().Equals(compared.GetType()))
+      { 
+        return false;
+      }
+      Item comparedItem = (Item)compared;
+      //if the values of the object variables are the same, the objects are equel
+      if (this.identifier == comparedItem.identifier)
+      {
+        return true;
+      }
+      //otherwise the objects are not equal
       return false;
       }
     }
 
   }
-}
+
