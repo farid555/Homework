@@ -9,7 +9,7 @@ namespace ConsoleApplication
     {
       Dog doggie = new Dog();
       Cat cattie = new Cat();
-      Birds birdie = new Birds();
+      Bird birdie = new Bird();
       Console.WriteLine(doggie.TalkToOwner());
       Console.WriteLine(cattie.TalkToOwner());
       Console.WriteLine(birdie.TalkToOwner());
