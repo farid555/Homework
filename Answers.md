@@ -47,6 +47,21 @@ September 2012
 
 **Scribe** was designed and developed by Brian Reid of Carnegie Mellon University. It formed the subject of his 1980 doctoral dissertation, for which he received the Association for computing Machinery's Grace Murray Hopper **Award in 1982.**
 
+Colons can be used to align columns.
+
+| Tables        | Are           | Cool  |
+| ------------- |:-------------:| -----:|
+| col 3 is      | right-aligned | $1600 |
+| col 2 is      | centered      |   $12 |
+| zebra stripes | are neat      |    $1 |
+
+
+
+Markdown | Less | Pretty
+--- | --- | ---
+*Still* | `renders` | **nicely**
+1 | 2 | 3
+
 ##Exercise 3
 
 
