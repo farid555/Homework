@@ -57,7 +57,9 @@ namespace Exercise
 
     public override string ToString()
     {
-      return "balance: " + this.balance + ", space left " + HowMuchSpaceLeft();
+      return "balance:" + this.balance +", space left "+ HowMuchSpaceLeft();
     }
   }
 }
+
+//return base.ToString() + " salary " + this.salary + " per month";
