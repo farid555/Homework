@@ -1,20 +1,23 @@
-namespace Exercise
-{
-  public class Book : IPackable
-  {
+namespace Exercise {
+  public class Book : IPackable {
+    public string author { get; set; }
+    public string title { get; set; }
+    public int pubyear { get; set; }
+    public int weight;
 
-    public Book(string s, string s2, int i)
-    {
+    public Book (string s, string s2, int i) {
+      this.author = author;
+      this.title = title;
+      this.pubyear = pubyear;
+      this.weight = 1;
     }
 
-    public int Weight()
-    {
-      return 0;
+    public int Weight () {
+      return this.weight;
     }
 
-    public override string ToString()
-    {
-      return "";
+    public override string ToString () {
+      return this.author + ": " + this.title + " (" + this.pubyear + ")";
     }
   }
 }
