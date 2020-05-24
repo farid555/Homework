@@ -2,7 +2,7 @@ namespace Exercise
 {
   using System;
   public class Student : IComparable<Student>
-  {
+  {   
 
     public string name { get; }
 
@@ -21,7 +21,7 @@ namespace Exercise
     public int CompareTo(Student another)
     {
 
-      return 0;
+      return this.name.CompareTo(another.name);
     }
     //END SOLUTION
   }
