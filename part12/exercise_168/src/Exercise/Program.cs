@@ -1,6 +1,8 @@
 namespace Exercise
 {
   // Add "using Master  = ..."
+   using Master = MasterProject.MasterClass;
+
 
   public class Program
   {
