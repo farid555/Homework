@@ -31,7 +31,7 @@ namespace exercise_134
 
         if (score < 0 || score > 100)
         {
-          Console.WriteLine("Impossible number.");
+          Console.WriteLine("This Impossible number.");
           continue;
         }
         register.AddGradeBasedOnPoints(score);
