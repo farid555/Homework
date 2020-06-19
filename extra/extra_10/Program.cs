@@ -7,6 +7,26 @@ namespace extra_10
     public static void Main(string[] args)
     {
       // Add your code here:
+      
+      int[] array = {5, 1, 3, 4, 2};
+      PrintArrayInStars(array);
+    }
+
+    // define the method 
+      public static void PrintArrayInStars(int[] array)
+      { 
+        // call and list the array
+        for(int i = 0; i < array.Length; i++)
+        {
+           // transform numbers to stars
+          for (int stars = 0; stars < array[i]; stars++)
+          {
+            Console.Write("*");
+          }
+           // linebreaks for each row
+          Console.WriteLine("");
+        }
+          
 
     }
   }
