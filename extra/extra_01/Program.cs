@@ -15,10 +15,16 @@ namespace extra_01
       int num_of_times = Convert.ToInt32(Console.ReadLine());
       int num = 0;
 
+      /*
       while(num_of_times> num)
       {
         Console.WriteLine(input);
         num++;
+      } 
+       */
+      for (num = 0; num_of_times > num; num++)
+      {
+        Console.WriteLine(input);
       }
       
     }
