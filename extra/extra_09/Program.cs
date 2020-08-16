@@ -9,7 +9,7 @@ namespace extra_09
     {
       // Add your code here:
       
-      List<string> list = new List<string>() { "This is a string", "This is magic", "THIS IS PATRICK!" };
+      List<string> list = new List<string>() { "This is a string", "This is magic", "THIS IS PATRICK!","This is a string","This is magic","THIS IS PATRICK!","This is a string","This is magic","THIS IS PATRICK!"};
 
       int index = 0;
 
